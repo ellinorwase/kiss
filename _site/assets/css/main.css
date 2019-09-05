@@ -31,4 +31,13 @@ header .overlay { position: absolute; top: 0; left: 0; height: 100%; width: 100%
 @media (pointer: coarse) and (hover: none) { header { background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll; }
   header video { display: none; } }
 
+/* MEDIA */
+.media-width { width: 40em; height: 30em; }
+
+#carouselExampleIndicators { margin: 0 auto; width: 40em !important; }
+
+.iframe-kiss { float: left; width: 20%; }
+
+.iframe-kiss h4 { text-align: center; }
+
 /*# sourceMappingURL=main.css.map */
