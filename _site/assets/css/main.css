@@ -1,5 +1,7 @@
 body { background: #14110f; color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; margin: 0; padding: 0; }
 
+.content { padding: 106px; text-align: center; }
+
 a { color: black; }
 
 a:hover { color: #f19a16; background-size: cover; }
@@ -12,19 +14,29 @@ ul.menu-list { display: flex; text-decoration: none; margin: auto; background-co
 
 ul.menu-list > a { display: flex; margin: auto; text-decoration: none; font-size: 40px; list-style-type: none; }
 
-.sticky { position: fixed; top: 0; width: 100%; z-index: 10; }
+.sticky { position: fixed; top: 0; width: 100%; z-index: 10; margin-bottom: 20px; }
 
-.ticket { position: relative; box-sizing: border-box; width: 300px; height: 450px; margin: 150px auto 0; padding: 20px; border-radius: 10px; background: #FBFBFB; box-shadow: 2px 2px 15px 0px #AB9B0D; }
+.tickets-h { font-style: italic; font-family: serif; font-size: 80px; }
 
-.ticket:before, .ticket:after { content: ''; position: absolute; left: 5px; height: 6px; width: 290px; }
+.ticket { position: relative; box-sizing: border-box; width: 300px; height: 450px; margin: 50px auto 0; padding: 20px 10px; border-radius: 10px; background: #fbfbfb; box-shadow: 2px 2px 15px 0px #ab9b0d; display: inline-table; margin: 30px; margin-top: 200px; }
+
+.ticket:hover { background-color: rgba(255, 255, 255, 0.87); font-size: 30px; }
+
+.ticket:before, .ticket:after { content: ""; position: absolute; left: 5px; height: 6px; width: 290px; }
 
 .ticket:before { top: -5px; background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100%) -7px -8px/16px 16px repeat-x; }
 
 .ticket:after { bottom: -5px; background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100%) -7px -2px/16px 16px repeat-x; }
 
-.ticket__content { box-sizing: border-box; height: 100%; width: 100%; border: 6px solid #D8D8D8; }
+.ticket__content { box-sizing: border-box; height: 100%; width: 100%; border: 6px solid #d8d8d8; }
 
-header { position: relative; background-color: black; height: 75vh; min-height: 25rem; width: 100%; overflow: hidden; }
+.ticket-images { width: 268px; height: 290px; max-height: 300px; object-fit: cover; }
+
+.ticket-text { color: black; }
+
+.btn-warning { margin-bottom: 10px; }
+
+header { position: relative; background-color: black; height: 100vh; min-height: 25rem; width: 100%; overflow: hidden; }
 
 header video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: 0; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
 

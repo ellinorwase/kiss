@@ -23,6 +23,11 @@ body {
   padding: 0;
 }
 
+.content {
+  padding: 106px;
+  text-align: center;
+}
+
 a {
   color: rgb(0, 0, 0);
 }
@@ -54,8 +59,7 @@ ul.menu-list {
   font-family: serif;
   padding: 24px;
 }
-
-ul.menu-list>a {
+ul.menu-list > a {
   display: flex;
   margin: auto;
   text-decoration: none;
@@ -68,6 +72,13 @@ ul.menu-list>a {
   top: 0;
   width: 100%;
   z-index: 10;
+  margin-bottom: 20px;
+}
+
+.tickets-h{
+  font-style: italic;
+  font-family: serif;
+  font-size: 80px;
 }
 
 // TICKETS
@@ -76,15 +87,23 @@ ul.menu-list>a {
   box-sizing: border-box;
   width: 300px;
   height: 450px;
-  margin: 150px auto 0;
-  padding: 20px;
+  margin: 50px auto 0;
+  padding: 20px 10px;
   border-radius: 10px;
-  background: #FBFBFB;
-  box-shadow: 2px 2px 15px 0px #AB9B0D;
+  background: #fbfbfb;
+  box-shadow: 2px 2px 15px 0px #ab9b0d;
+  display: inline-table;
+  margin: 30px;
+  margin-top: 200px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.87);
+    font-size: 30px;
+  }
 
   &:before,
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 5px;
     height: 6px;
@@ -94,6 +113,7 @@ ul.menu-list>a {
   &:before {
     top: -5px;
     background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100%) -7px -8px / 16px 16px repeat-x,
+
   }
 
   &:after {
@@ -106,18 +126,31 @@ ul.menu-list>a {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  border: 6px solid #D8D8D8;
+  border: 6px solid #d8d8d8;
 }
 
 // TICKETS
 
+.ticket-images {
+  width: 268px;
+  height: 290px;
+  max-height: 300px;
+  object-fit: cover;
+}
 
+.ticket-text {
+  color: black;
+}
 
+.btn-warning {
+  margin-bottom: 10px;
+}
+// TICKETS
 
 header {
   position: relative;
   background-color: black;
-  height: 75vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -156,7 +189,8 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+      no-repeat center center scroll;
   }
 
   header video {
