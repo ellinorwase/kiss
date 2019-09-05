@@ -10,16 +10,22 @@ body {
   padding: 0;
 }
 
+a{
+color: rgb(0, 0, 0);
+}
+
+a:hover{
+color: rgb(241, 154, 22);
+}
+
 footer{
   background-color: rgb(44, 21, 21);
 }
 
 .header{
   background-color: rgb(161, 154, 154);
-  color: blue;
   height: 300px;
   text-align: center;
-  background-image: url("../images/group-photo.png")
 }
 
 .group-photo{
@@ -30,11 +36,11 @@ footer{
 
 ul.menu-list{
   display: flex;
-  margin: 20px;
   text-decoration: none;
   margin: auto;
-  
-
+  background-color: #fff;
+  font-family: serif;
+  padding: 24px;
 }
 ul.menu-list>a{
   display: flex;
@@ -42,6 +48,13 @@ ul.menu-list>a{
   text-decoration: none;
   font-size: 40px;
   list-style-type: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 // TICKETS
@@ -81,7 +94,6 @@ ul.menu-list>a{
   height: 100%;
   width: 100%;
   border: 6px solid #D8D8D8;
-  background-image: url("../images/tickets.jpg");
 }
 // TICKETS
 
@@ -91,7 +103,7 @@ ul.menu-list>a{
 header {
   position: relative;
   background-color: black;
-  height: 75vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;

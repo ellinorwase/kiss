@@ -1,4 +1,4 @@
-<a href="../_site/index.html">
+<a href="index.html">
     <header>
             <div class="overlay"></div>
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -16,9 +16,9 @@
           </header>
 </a>
 <!-- Menu -->
-<ul class="menu-list">
+<ul class="menu-list" id="navbar">
     <a href="index.html">
-        <li>Tickets</li>
+        <li>Home</li>
     </a>
     <a href="about.html">
         <li>About</li>
@@ -27,4 +27,18 @@
         <li>Media</li>
     </a>
 </ul>
-<hr> <br>
+
+<script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
