@@ -5,19 +5,31 @@ $red: #E6241F;
 $light-blue: #B1C6E2;
 $blue:#6C90B5;
 $bodyColor: #ffffff;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$bodyFont: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Helvetica,
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol";
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+
 }
 
-footer{
+footer {
   background-color: rgb(44, 21, 21);
 }
 
-.header{
+.header {
   background-color: rgb(161, 154, 154);
   color: blue;
   height: 300px;
@@ -25,21 +37,22 @@ footer{
   background-image: url("../images/group-photo.png")
 }
 
-.group-photo{
+.group-photo {
   width: 100%;
   height: 500px;
   opacity: 0.3;
 }
 
-ul.menu-list{
+ul.menu-list {
   display: flex;
   margin: 20px;
   text-decoration: none;
   margin: auto;
-  
+
 
 }
-ul.menu-list>a{
+
+ul.menu-list>a {
   display: flex;
   margin: auto;
   text-decoration: none;
@@ -58,7 +71,7 @@ ul.menu-list>a{
   border-radius: 10px;
   background: #FBFBFB;
   box-shadow: 2px 2px 15px 0px #AB9B0D;
-  
+
   &:before,
   &:after {
     content: '';
@@ -67,15 +80,15 @@ ul.menu-list>a{
     height: 6px;
     width: 290px;
   }
-  
+
   &:before {
     top: -5px;
-    background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100% ) -7px -8px / 16px 16px repeat-x,
+    background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100%) -7px -8px / 16px 16px repeat-x,
   }
-  
+
   &:after {
     bottom: -5px;
-    background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100% ) -7px -2px / 16px 16px repeat-x,
+    background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100%) -7px -2px / 16px 16px repeat-x,
   }
 }
 
@@ -84,7 +97,256 @@ ul.menu-list>a{
   height: 100%;
   width: 100%;
   border: 6px solid #D8D8D8;
-  background-image: url("../images/tickets.jpg");
+  // background-image: url("../images/tickets.jpg");
 }
+
 // TICKETS
 
+
+
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+// Variables
+
+$primary-color: $orange;
+$secondary-color: $blue;
+
+
+
+
+// Timeline
+$timeline-color: $red;
+
+
+// Mixins and Placeholders
+%clearfix {
+
+  &:after,
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}
+
+@mixin prefix($prop, $val) {
+
+  @each $prefix in '-webkit-',
+  '-moz-',
+  '-ms-',
+  '' {
+    #{$prefix}#{$prop}: $val;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+
+// Timeline
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 10px;
+  @include prefix(transition, all .4s ease);
+
+  &:before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: $orange;
+    left: 50%;
+    top: 0;
+    position: absolute;
+  }
+
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+  }
+
+  .timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+    @extend %clearfix;
+
+    .timeline-icon {
+      background: rgb(230,77,31);
+background: radial-gradient(circle, $red, $orange);
+
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      overflow: hidden;
+      margin-left: -23px;
+      @include prefix(border-radius, 50%);
+
+      svg {
+        position: relative;
+        top: 14px;
+        left: 14px;
+      }
+    }
+
+    .timeline-content {
+      width: 45%;
+      background: #fff;
+      padding: 20px;
+      @include prefix(box-shadow, 0 3px 0 rgba(0, 0, 0, 0.1));
+      @include prefix(border-radius, 5px);
+      @include prefix(transition, all .3s ease);
+
+      h2 {
+        padding: 15px;
+        background: rgb(230, 36, 31);
+        background: linear-gradient(137deg, #e64d1f, $orange, );
+
+        color: #fff;
+        margin: -20px -20px 0 -20px;
+        font-weight: 300;
+        @include prefix(border-radius, 3px 3px 0 0);
+      }
+
+      p {
+        color: #565554;
+        font-size:0.9rem;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 45%;
+        top: 20px;
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 7px solid $orange;
+      }
+
+      &.right {
+        float: right;
+
+        &:before {
+          content: '';
+          right: 45%;
+          left: inherit;
+          border-left: 0;
+          border-right: 7px solid $timeline-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #timeline {
+    margin: 30px;
+    padding: 0px;
+    width: 90%;
+
+    &:before {
+      left: 0;
+    }
+
+    .timeline-item {
+      .timeline-content {
+        width: 90%;
+        float: right;
+
+        &:before,
+        &.right:before {
+          left: 10%;
+          margin-left: -6px;
+          border-left: 0;
+          border-right: 7px solid $timeline-color;
+        }
+      }
+
+      .timeline-icon {
+        left: 0;
+      }
+    }
+  }
+}
