@@ -11,6 +11,16 @@ body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+color: rgb(0, 0, 0);
+}
+
+a:hover{
+color: rgb(241, 154, 22);
 }
 
 footer{
@@ -19,10 +29,8 @@ footer{
 
 .header{
   background-color: rgb(161, 154, 154);
-  color: blue;
   height: 300px;
   text-align: center;
-  background-image: url("../images/group-photo.png")
 }
 
 .group-photo{
@@ -33,11 +41,11 @@ footer{
 
 ul.menu-list{
   display: flex;
-  margin: 20px;
   text-decoration: none;
   margin: auto;
-  
-
+  background-color: #fff;
+  font-family: serif;
+  padding: 24px;
 }
 ul.menu-list>a{
   display: flex;
@@ -45,6 +53,13 @@ ul.menu-list>a{
   text-decoration: none;
   font-size: 40px;
   list-style-type: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 // TICKETS
@@ -84,7 +99,57 @@ ul.menu-list>a{
   height: 100%;
   width: 100%;
   border: 6px solid #D8D8D8;
-  background-image: url("../images/tickets.jpg");
 }
 // TICKETS
 
+
+
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
