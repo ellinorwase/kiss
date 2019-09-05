@@ -47,6 +47,7 @@ header .overlay { position: absolute; top: 0; left: 0; height: 100%; width: 100%
 @media (pointer: coarse) and (hover: none) { header { background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll; }
   header video { display: none; } }
 
+<<<<<<< HEAD
 #timeline .timeline-item:after, #timeline .timeline-item:before { content: ''; display: block; width: 100%; clear: both; }
 
 *, *:before, *:after { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
@@ -90,5 +91,15 @@ footer .footer-logo { width: 300px; height: auto; }
   #timeline .timeline-item .timeline-content { width: 90%; float: right; }
   #timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before { left: 10%; margin-left: -6px; border-left: 0; border-right: 7px solid #E6241F; }
   #timeline .timeline-item .timeline-icon { left: 0; } }
+=======
+/* MEDIA */
+.media-width { width: 40em; height: 30em; }
+
+#carouselExampleIndicators { margin: 0 auto; width: 40em !important; }
+
+.iframe-kiss { float: left; width: 20%; }
+
+.iframe-kiss h4 { text-align: center; }
+>>>>>>> media
 
 /*# sourceMappingURL=main.css.map */
