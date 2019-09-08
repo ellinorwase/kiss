@@ -240,8 +240,17 @@ footer {
     width:300px;
     height:auto;
   }
-}
+  .footer--logo-wrapper{
 
+    .footer--social-icon{
+  display:flex;
+
+      svg {
+        fill:white;
+      }
+    }
+  }
+}
 // Timeline
 #timeline {
   width: 100%;
