@@ -5,15 +5,16 @@ $red: #E6241F;
 $light-blue: #B1C6E2;
 $blue:#6C90B5;
 $bodyColor: #ffffff;
-$bodyFont: -apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Helvetica,
-Arial,
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol";
+// $bodyFont: -apple-system,
+// BlinkMacSystemFont,
+// "Segoe UI",
+// Helvetica,
+// Arial,
+// sans-serif,
+// "Apple Color Emoji",
+// "Segoe UI Emoji",
+// "Segoe UI Symbol";
+$bodyFont: 'Montserrat';
 
 body {
   background: $backgroundColor;
@@ -21,6 +22,17 @@ body {
   font-family: $bodyFont;
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: $bodyFont;
 }
 
 a {
@@ -236,8 +248,9 @@ a {
 }
 
 footer {
-  height:130px;
+  height: 130px;
   position: relative;
+
   .footer-logo {
     width: 300px;
     height: auto;
@@ -250,22 +263,23 @@ footer {
     justify-content: center;
     height: 100%;
     align-items: center;
-}
-    .footer--social-icon {
-      padding:0 2rem;
-      svg {
-        transition:0.2s;
-        fill: white;
-        cursor: pointer;
-        &:hover {
-          fill: $orange;
-        }
+  }
+
+  .footer--social-icon {
+    padding: 0 2rem;
+
+    svg {
+      transition: 0.2s;
+      fill: white;
+      cursor: pointer;
+
+      &:hover {
+        fill: $orange;
       }
     }
   }
-  .text-center{
-    text-align: center;
-  }
+}
+
 
 // Timeline
 #timeline {
@@ -293,7 +307,7 @@ footer {
   }
 
   .timeline-item {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     position: relative;
     @extend %clearfix;
 
