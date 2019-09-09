@@ -38,7 +38,7 @@ ul.menu-list > a { display: flex; margin: auto; text-decoration: none; font-size
 
 .ticket { position: relative; box-sizing: border-box; width: 300px; height: 450px; margin: 50px auto 0; padding: 20px 10px; border-radius: 10px; background: #fbfbfb; box-shadow: 2px 2px 15px 0px #ab9b0d; display: inline-table; margin: 1.5rem; margin-top: 40px; transition: 0.2s; }
 
-.ticket:hover { background-color: rgba(255, 255, 255, 0.93); cursor: pointer; }
+.ticket:hover { background-color: rgba(255, 255, 255, 0.93); cursor: pointer; font-size: 24px; }
 
 .ticket:hover button { color: #212529; background-color: #e0a800; border-color: #d39e00; }
 
