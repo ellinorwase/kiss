@@ -64,6 +64,7 @@ ul.menu-list {
   background-color: #fff;
   font-family: serif;
   padding: 24px;
+  width: 100%;
 }
 ul.menu-list > a {
   display: flex;
@@ -104,7 +105,7 @@ ul.menu-list > a {
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.87);
-    font-size: 30px;
+    font-size: 22px;
   }
 
   &:before,
