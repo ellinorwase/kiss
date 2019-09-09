@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>About - </title>
-    <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="/assets/css/main.css">
   </head>
   <body>
-    <a href="index.html">
+    <a href="../_site/index.html">
     <header>
             <div class="overlay"></div>
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -28,53 +27,180 @@
           </header>
 </a>
 <!-- Menu -->
-<ul class="menu-list" id="navbar">
+<div class="menu-list-wrapper">
+  <ul class="menu-list" id="navbar">
     <a href="index.html" class="active" >
-        <li>Home</li>
+      <li>Home</li>
     </a>
     <a href="about.html">
-        <li>About</li>
+      <li>About</li>
     </a>
     <a href="media.html">
-        <li>Media</li>
+      <li>Media</li>
     </a>
-</ul>
+  </ul>
+</div>
 
 <script>
         window.onscroll = function() {myFunction()};
-        
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
         
         function myFunction() {
           if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
+            navbar.classList.add("sticky");
           } else {
             navbar.classList.remove("sticky");
           }
         }
 </script>
     
+    <div class="container">
     <h1>About</h1>
-<p>
-Text
-</p>
+    <div id="timeline">
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+    <path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+	c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+	l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+	c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+	c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z" />
+</svg>
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>footer</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
+            </div>
+            <div class="timeline-content">
+                <h2>Early 1970s</h2>
+                <p>
+                    KISS traces its roots to Wicked Lester, a New York-based rock and roll band led by co-founders Gene
+                    Simmons and Paul Stanley. Unhappy with the direction of Wicked Lester, Simmons and Stanley part ways
+                    with the other members in 1972 after Epic Records rejected an album recorded by the group.
+                </p>
+                <button type="button" class="btn btn-danger">Read more</button>
 
-</head>
-<body>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px"
+viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+<g>
+    <path fill="#FFFFFF" d="M17.92,3.065l-1.669-2.302c-0.336-0.464-0.87-0.75-1.479-0.755C14.732,0.008,7.653,0,7.653,0v5.6
+c0,0.096-0.047,0.185-0.127,0.237c-0.081,0.052-0.181,0.06-0.268,0.02l-1.413-0.64C5.773,5.183,5.69,5.183,5.617,5.215l-1.489,0.65
+c-0.087,0.038-0.19,0.029-0.271-0.023c-0.079-0.052-0.13-0.141-0.13-0.235V0H2.191C1.655,0,1.233,0.434,1.233,0.97
+c0,0,0.025,15.952,0.031,15.993c0.084,0.509,0.379,0.962,0.811,1.242l2.334,1.528C4.671,19.905,4.974,20,5.286,20h10.307
+c1.452,0,2.634-1.189,2.634-2.64V4.007C18.227,3.666,18.12,3.339,17.92,3.065z M16.42,17.36c0,0.464-0.361,0.833-0.827,0.833H5.341
+l-1.675-1.089h10.341c0.537,0,0.953-0.44,0.953-0.979V2.039l1.459,2.027V17.36L16.42,17.36z" />
+</g>
+</svg>
+
+
+            </div>
+            <div class="timeline-content right">
+                <h2>1980's</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab
+                    libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+                </p>
+                <button type="button" class="btn btn-danger">Read more</button>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+    <path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+	c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+	l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+	c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+	c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z" />
+</svg>
+            </div>
+            <div class="timeline-content">
+                <h2>1990's</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab
+                    libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+                    libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+                </p>
+                <button type="button" class="btn btn-danger">Read more</button>
+            </div>
+        </div>
+        <div class="timeline-item">
+                <div class="timeline-icon">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px"
+viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+<g>
+    <path fill="#FFFFFF" d="M17.92,3.065l-1.669-2.302c-0.336-0.464-0.87-0.75-1.479-0.755C14.732,0.008,7.653,0,7.653,0v5.6
+c0,0.096-0.047,0.185-0.127,0.237c-0.081,0.052-0.181,0.06-0.268,0.02l-1.413-0.64C5.773,5.183,5.69,5.183,5.617,5.215l-1.489,0.65
+c-0.087,0.038-0.19,0.029-0.271-0.023c-0.079-0.052-0.13-0.141-0.13-0.235V0H2.191C1.655,0,1.233,0.434,1.233,0.97
+c0,0,0.025,15.952,0.031,15.993c0.084,0.509,0.379,0.962,0.811,1.242l2.334,1.528C4.671,19.905,4.974,20,5.286,20h10.307
+c1.452,0,2.634-1.189,2.634-2.64V4.007C18.227,3.666,18.12,3.339,17.92,3.065z M16.42,17.36c0,0.464-0.361,0.833-0.827,0.833H5.341
+l-1.675-1.089h10.341c0.537,0,0.953-0.44,0.953-0.979V2.039l1.459,2.027V17.36L16.42,17.36z" />
+</g>
+</svg>
+    
+    
+                </div>
+                <div class="timeline-content right">
+                    <h2>1980's</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab
+                        
+                    </p>
+                    <button type="button" class="btn btn-danger">Read more</button>
+                </div>
+            </div>
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+    <path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+	c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+	l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+	c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+	c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z" />
+</svg>
+            </div>
+            <div class="timeline-content">
+                <h2>1990's</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab
+                    libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+                </p>
+                <button type="button" class="btn btn-danger">Read more</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8137.397886002625!2d18.044752246304242!3d59.343814065989015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1567690451228!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
     <footer>
-        footer
-    </footer>
-</body>
-</html>
+    footer
+    <div class="footer-logo">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 281.7 121.6"><defs><style>.cls-1{fill:#fff200;}.cls-1,.cls-2{fill-rule:evenodd;}.cls-3{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="207.75" y1="236.9" x2="207.75" y2="338.1" gradientTransform="matrix(1, 0, 0, -1, -65.2, 349.82)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff200"/><stop offset="1" stop-color="#ed1d24"/></linearGradient></defs><title>kiss-logo</title><path id="path11602" d="M141,90.72,155.6,63H141ZM135.2,114V57.22h30Zm-.4,8.4-.4.4H100.1l-1.3-1.1-1.2,1.1H57v-4.3c0-12.8-2.9-23.1-6.6-30.3v34.5H3.6V1.22H50.2v5.4c.6-1.8,1.1-3.6,1.7-5.4H97.2v4.3c0,15.3-7.3,33-17.3,44.6,3.9,3.5,8.1,9.1,11.6,15.1V1.42h49.4v22.5l13.9-22.5h49.9l-15.1,29.9h15.2l12.5-29.9h49.2L255,31.32h30.3l-27.9,91.5H204L227.4,63H206.5l-24.6,59.8H135.2ZM91.4,7H56.2c-3.5,10.9-5,12.6-11.8,21.3V7H9.3V117H44.6V71.12C57.2,85.22,62.4,97,62.8,117H95.3l3.2-3.1,3.7,3.1h29.7l3-3.1,2.8,3.1H178l24.6-59.8h33.3L212.4,117H253l24.4-79.9H246.5l11.6-29.9H221.2l-12.5,29.9H180.2l15.2-29.9H158.2l-22.9,37v-37H97.4v83.5c-6.4-14.5-12.5-30.6-26.1-39.9C82.4,39.32,90.9,23.52,91.4,7" transform="translate(-3.6 -1.22)"/><path id="path11604" class="cls-1" d="M138.1,60.12v42.2l22.3-42.2ZM13.9,11.72v100.8h26V61.72c3.6,2.2,26.7,17.9,27.2,50.8H95.7c-1.6-28.7-19.2-53.2-30.6-60.9,9.7-9.8,20-28,20.9-39.8H60.5c-2.4,10.1-17.1,27-20.6,25.5V11.72Zm87.5,101.1h29.5v-101H101.4Zm59.2-101.1L135.7,53H172l-31.4,59.9h34.7l29.1-71.6H173.6l14.5-29.6Zm63.8,0-18.1,41.2H242l-23.9,59.9H250l21.2-71.5H240.1l11.3-29.6ZM94.5,76.92V4.32h43.6V34l18.4-29.7H200l-15.2,29.9h21.8l12.6-29.9h43.1l-11.6,29.9h30.6l-26.1,85.7h-47l23.5-59.8H204.6L180,119.92H136.5l-1.6-1.8-1.7,1.8h-32l-2.5-2.1-2.2,2.1H59.9v-1.4c0-18.9-6.2-32.8-12.4-39.8v41.2H6.4V4.12H47.3v15.7c1.9-2.4,3.9-6.6,6.4-14.7l.3-1H94.3v1.4c0,16.4-8.9,34.9-18.6,44.9,6.1,4.1,14.3,16.3,18.8,26.5" transform="translate(-3.6 -1.22)"/><path id="path11606" class="cls-2" d="M13.9,11.72v100.8h26V61.72c3.6,2.2,26.7,17.9,27.2,50.8H95.7c-1.6-28.7-19.2-53.2-30.6-60.9,9.7-9.8,20-28,20.9-39.8H60.5c-2.4,10.1-17.1,27-20.6,25.5V11.72Zm87.5,101.1h29.5v-101H101.4Zm59.2-101.1L135.7,53H172l-31.4,59.9h34.7l29.1-71.6H173.6l14.5-29.6Zm63.8,0-18.1,41.2H242l-23.9,59.9H250l21.2-71.5H240.1l11.3-29.6ZM91.4,7c-.5,16.5-9,32.3-20.1,43.9,13.6,9.3,19.8,25.4,26.1,39.9V7.22h37.8v37l22.9-37h37.3l-15.2,29.9h28.5l12.5-29.9h36.9l-11.6,29.9h30.9L253,117H212.4l23.5-59.8H202.6L178,117H137.7l-2.8-3.1-3,3.1H102.2l-3.7-3.1L95.3,117H62.8c-.3-19.9-5.5-31.7-18.2-45.9V117H9.3V7H44.4v21.3c6.8-8.7,8.3-10.4,11.8-21.3Zm43.8,107V57.22h30Z" transform="translate(-3.6 -1.22)"/><path id="path11615" class="cls-3" d="M101.4,112.82h29.5v-101H101.4Zm59.2-101.1L135.7,53H172l-31.4,59.9h34.7l29.1-71.6H173.6l14.5-29.6Zm63.8,0-18.1,41.2H242l-23.9,59.9H250l21.2-71.5H240.1l11.3-29.6Zm-210.5,0v100.8h26V61.72c3.6,2.2,26.7,17.9,27.2,50.8H95.7c-1.6-28.7-19.2-53.2-30.6-60.9,9.7-9.8,20-28,20.9-39.8H60.5c-2.4,10.1-17.1,27-20.6,25.5V11.72Z" transform="translate(-3.6 -1.22)"/></svg>
+    </div>
+</footer>
+
+
+
       </body>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+<script>
+      $('.carousel').carousel({
+        interval: 2500
+      })
+</script>
     </html>
+
