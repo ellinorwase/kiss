@@ -37,7 +37,9 @@ a:hover {
   background-size: cover;
 }
 
-
+.header-pic{
+  margin: 25%;
+}
 
 .header {
   background-color: rgb(161, 154, 154);
@@ -98,7 +100,7 @@ ul.menu-list > a {
   box-shadow: 2px 2px 15px 0px #ab9b0d;
   display: inline-table;
   margin: 30px;
-  margin-top: 200px;
+  margin-top: 100px;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.87);
