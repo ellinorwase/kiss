@@ -1,9 +1,9 @@
 $backgroundColor: #14110f;
-$yellow: #F7E601;
-$orange: #EE8212;
-$red: #E6241F;
-$light-blue: #B1C6E2;
-$blue:#6C90B5;
+$yellow: #f7e601;
+$orange: #ee8212;
+$red: #e6241f;
+$light-blue: #b1c6e2;
+$blue: #6c90b5;
 $bodyColor: #ffffff;
 // $bodyFont: -apple-system,
 // BlinkMacSystemFont,
@@ -14,8 +14,8 @@ $bodyColor: #ffffff;
 // "Apple Color Emoji",
 // "Segoe UI Emoji",
 // "Segoe UI Symbol";
-$bodyFont: 'Montserrat';
-html{
+$bodyFont: "Montserrat";
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -24,8 +24,6 @@ body {
   font-family: $bodyFont;
   margin: 0;
   padding: 0;
- 
-
 }
 
 // .content {
@@ -55,7 +53,7 @@ a:hover {
 }
 
 h2 {
-  font-size:2.5rem;
+  font-size: 2.5rem;
 }
 .chunk {
   display: inline-block;
@@ -79,14 +77,14 @@ h2 {
     width: 100%;
   }
 }
-.full-width{
+.full-width {
   display: flex;
-  width:100%;
+  width: 100%;
   justify-content: center;
 }
 
-.spotify-list{
-  height:80vh;
+.spotify-list {
+  height: 80vh;
 }
 
 .header-pic {
@@ -105,7 +103,6 @@ h2 {
   opacity: 0.3;
 }
 
-
 .menu-list-wrapper {
   height: px;
 }
@@ -120,7 +117,7 @@ ul.menu-list {
   width: 100%;
 }
 
-ul.menu-list>a {
+ul.menu-list > a {
   display: flex;
   margin: auto;
   text-decoration: none;
@@ -182,22 +179,30 @@ ul.menu-list>a {
 
   &:before {
     top: -5px;
-    background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100%) -7px -8px / 16px 16px repeat-x,
-
+    background: radial-gradient(
+        circle,
+        transparent,
+        transparent 50%,
+        #fbfbfb 50%,
+        #fbfbfb 100%
+      ) -7px -8px / 16px 16px repeat-x;
   }
 
   &:after {
     bottom: -5px;
-    background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100%) -7px -2px / 16px 16px repeat-x,
+    background: radial-gradient(
+        circle,
+        transparent,
+        transparent 50%,
+        #fbfbfb 50%,
+        #fbfbfb 100%
+      ) -7px -2px / 16px 16px repeat-x;
   }
 }
 
 .discography {
-  background-image: url()
+  background-image: url();
 }
-
-
-
 
 .ticket__content {
   box-sizing: border-box;
@@ -224,8 +229,8 @@ ul.menu-list>a {
 }
 
 .btn-warning {
-  background-color:$yellow;
-  border-color:$yellow;
+  background-color: $yellow;
+  border-color: $yellow;
   margin-bottom: 10px;
 }
 
@@ -273,7 +278,8 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll;
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+      no-repeat center center scroll;
   }
 
   // header video {
@@ -281,30 +287,19 @@ header .overlay {
   // }
 }
 
-
-
-
-
-
-
 // Variables
 
 $primary-color: $orange;
 $secondary-color: $blue;
 
-
-
-
 // Timeline
 $timeline-color: $red;
 
-
 // Mixins and Placeholders
 %clearfix {
-
   &:after,
   &:before {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     clear: both;
@@ -312,11 +307,7 @@ $timeline-color: $red;
 }
 
 @mixin prefix($prop, $val) {
-
-  @each $prefix in '-webkit-',
-  '-moz-',
-  '-ms-',
-  '' {
+  @each $prefix in "-webkit-", "-moz-", "-ms-", "" {
     #{$prefix}#{$prop}: $val;
   }
 }
@@ -328,7 +319,6 @@ $timeline-color: $red;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-
 
 img {
   max-width: 100%;
@@ -347,7 +337,7 @@ a {
   iframe {
     width: 100%;
     height: 30vh;
-    filter: invert(1) grayscale(1)
+    filter: invert(1) grayscale(1);
   }
 }
 
@@ -385,14 +375,13 @@ footer {
   }
 }
 
-
 // Timeline
 #timeline {
   width: 100%;
   margin: 30px auto;
   position: relative;
   padding: 0 10px;
-  @include prefix(transition, all .4s ease);
+  @include prefix(transition, all 0.4s ease);
 
   &:before {
     content: "";
@@ -442,12 +431,12 @@ footer {
       padding: 20px;
       @include prefix(box-shadow, 0 3px 0 rgba(0, 0, 0, 0.1));
       @include prefix(border-radius, 5px);
-      @include prefix(transition, all .3s ease);
+      @include prefix(transition, all 0.3s ease);
 
       h2 {
         padding: 15px;
         background: rgb(230, 36, 31);
-        background: linear-gradient(137deg, #e64d1f, $orange, );
+        background: linear-gradient(137deg, #e64d1f, $orange);
 
         color: #fff;
         margin: -20px -20px 0 -20px;
@@ -463,7 +452,7 @@ footer {
       }
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         left: 45%;
         top: 20px;
@@ -478,7 +467,7 @@ footer {
         float: right;
 
         &:before {
-          content: '';
+          content: "";
           right: 45%;
           left: inherit;
           border-left: 0;
@@ -520,9 +509,6 @@ footer {
   }
 }
 
-
-
-
 .fastfood {
   height: 40vh;
   width: 100%;
@@ -538,10 +524,7 @@ footer {
     filter: grayscale(1) brightness(0.5);
   }
 
-
-
   .fastfood-content {
-
     position: absolute;
     height: 100%;
     width: 100%;
@@ -551,9 +534,6 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
-
   }
 }
 
@@ -570,7 +550,6 @@ footer {
   }
 }
 
-
 /* MEDIA */
 
 .media-width {
@@ -581,7 +560,7 @@ footer {
 
 #carouselExampleIndicators {
   width: 100% !important;
-  height: 90vh;
+  height: 100%;
 }
 
 .carousel-inner {
@@ -591,18 +570,17 @@ footer {
   overflow: hidden;
 }
 
-
 .black--text {
-  color:black;
+  color: black;
 }
-.band-picture{
-  background-color:#ffffffee;
-  display: flex; 
-  justify-content: center; 
+.band-picture {
+  background-color: #ffffffee;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  height:90vh;
+  height: 90vh;
   position: relative;
-  img{
+  img {
     width: 90%;
     object-fit: cover;
     margin: 0 auto;
@@ -610,7 +588,7 @@ footer {
     height: 90%;
     opacity: 0.7;
     box-shadow: 0px 0px 10px 4px #9a9a9a;
-}
+  }
   .band-picture-content {
     position: absolute;
     width: 50%;
@@ -620,8 +598,6 @@ footer {
     padding: 1rem;
   }
 }
-
-
 
 .iframe-kiss {
   padding: 0 6px;
@@ -637,26 +613,24 @@ footer {
 
 .iframe-kiss iframe {
   width: 100%;
-
 }
 
 @media only screen and (max-width: 1024px) {
   #carouselExampleIndicators {
     width: 100% !important;
-
   }
 
   #carouselExampleIndicators img {
     height: 10%;
-
   }
-  .ticket{
+  .ticket {
     width: 100%;
     margin: auto;
     margin-bottom: 15%;
     padding: 0px;
   }
-  .ticket:before, .ticket:after{
+  .ticket:before,
+  .ticket:after {
     width: 100%;
   }
 }
@@ -666,12 +640,31 @@ footer {
     width: 49.99999%;
     margin: 6px 0;
   }
-
+  ul.menu-list{
+    display: grid;
+    padding: 0px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .iframe-kiss {
     width: 100%;
+  }
+  #carouselExampleIndicators{    
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+  }
+  .band-picture .band-picture-content {
+    width: 100%;
+    height: 100%;
+    left: 0rem;
 
   }
+  
 }
