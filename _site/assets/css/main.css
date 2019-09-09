@@ -47,7 +47,6 @@ header .overlay { position: absolute; top: 0; left: 0; height: 100%; width: 100%
 @media (pointer: coarse) and (hover: none) { header { background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll; }
   header video { display: none; } }
 
-<<<<<<< HEAD
 #timeline .timeline-item:after, #timeline .timeline-item:before { content: ''; display: block; width: 100%; clear: both; }
 
 *, *:before, *:after { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
@@ -91,15 +90,14 @@ footer .footer-logo { width: 300px; height: auto; }
   #timeline .timeline-item .timeline-content { width: 90%; float: right; }
   #timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before { left: 10%; margin-left: -6px; border-left: 0; border-right: 7px solid #E6241F; }
   #timeline .timeline-item .timeline-icon { left: 0; } }
-=======
+
 /* MEDIA */
-.media-width { width: 40em; height: 30em; }
+.media-width { width: 70em; height: 30em; }
 
-#carouselExampleIndicators { margin: 0 auto; width: 40em !important; }
+#carouselExampleIndicators { margin: 0 auto; margin-top: 20px; margin-bottom: 20px; padding: 10px; width: 40em !important; }
 
-.iframe-kiss { float: left; width: 20%; }
+.iframe-kiss { float: left; width: 20%; padding-bottom: 20px; }
 
-.iframe-kiss h4 { text-align: center; }
->>>>>>> media
+.iframe-kiss h4 { text-align: center; color: #6C90B5; font-family: ans-serif; }
 
 /*# sourceMappingURL=main.css.map */
