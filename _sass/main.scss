@@ -51,6 +51,10 @@ a:hover {
   opacity: 0.3;
 }
 
+.menu-list-wrapper{
+  height:108px;
+}
+
 ul.menu-list {
   display: flex;
   text-decoration: none;
@@ -273,8 +277,17 @@ footer {
     width:300px;
     height:auto;
   }
-}
+  .footer--logo-wrapper{
 
+    .footer--social-icon{
+  display:flex;
+
+      svg {
+        fill:white;
+      }
+    }
+  }
+}
 // Timeline
 #timeline {
   width: 100%;
