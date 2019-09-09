@@ -15,13 +15,16 @@ $bodyColor: #ffffff;
 // "Segoe UI Emoji",
 // "Segoe UI Symbol";
 $bodyFont: 'Montserrat';
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
   margin: 0;
   padding: 0;
+ 
 
 }
 
@@ -102,8 +105,9 @@ h2 {
   opacity: 0.3;
 }
 
+
 .menu-list-wrapper {
-  height: 108px;
+  height: px;
 }
 
 ul.menu-list {
@@ -112,7 +116,7 @@ ul.menu-list {
   margin: auto;
   background-color: #fff;
   font-family: serif;
-  padding: 24px;
+  padding: 7px;
   width: 100%;
 }
 
@@ -120,7 +124,7 @@ ul.menu-list>a {
   display: flex;
   margin: auto;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 30px;
   list-style-type: none;
 }
 
