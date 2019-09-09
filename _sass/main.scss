@@ -113,6 +113,7 @@ ul.menu-list {
   background-color: #fff;
   font-family: serif;
   padding: 24px;
+  width: 100%;
 }
 
 ul.menu-list>a {
@@ -271,9 +272,9 @@ header .overlay {
     background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll;
   }
 
-  header video {
-    display: none;
-  }
+  // header video {
+  //   display: none;
+  // }
 }
 
 
@@ -644,6 +645,15 @@ footer {
   #carouselExampleIndicators img {
     height: 10%;
 
+  }
+  .ticket{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15%;
+    padding: 0px;
+  }
+  .ticket:before, .ticket:after{
+    width: 100%;
   }
 }
 
