@@ -17,7 +17,15 @@ h2 { font-size: 2.5rem; }
 
 .chunk::after { background: #ee8212 50% repeat; bottom: 0; content: ""; height: 18px; left: 0; position: absolute; width: 100%; }
 
-.KIϟϟ { font-weight: 800; font-size: 8.8em; letter-spacing: 0.5em; position: absolute; line-height: 1em; z-index: 10; color: #292b2e; top: 80%; left: 50%; transform: translate(-50%, -50%); }
+.KIϟϟ { font-weight: 800; font-size: 8.8em; letter-spacing: 0.5em; position: absolute; line-height: 1em; z-index: 10; color: #292b2e; top: 80%; left: 50%; }
+
+h1.KIϟϟ { -webkit-animation-name: example; -webkit-animation-duration: 4s; -webkit-animation-iteration-count: 2; transform: translate(-50%, -50%); animation-name: Kiss; animation-duration: 4s; animation-iteration-count: 2; }
+
+@keyframes Kiss { 0% { color: #3f3f3f; }
+  25% { color: #a37406; }
+  50% { color: #5d0612; }
+  75% { color: #ff9100; }
+  100% { color: #3f3f3f; } }
 
 .full-width { display: flex; width: 100%; justify-content: center; }
 

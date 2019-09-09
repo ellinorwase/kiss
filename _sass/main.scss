@@ -88,8 +88,27 @@ h2 {
   color: #292b2e;
   top: 80%;
   left: 50%;
-  transform: translate(-50%, -50%);
 }
+
+h1.KIϟϟ{
+  -webkit-animation-name: example; 
+  -webkit-animation-duration: 4s; 
+  -webkit-animation-iteration-count: 2; 
+  transform: translate(-50%, -50%);
+  animation-name: Kiss;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+
+}
+
+@keyframes Kiss {
+  0%   {color:rgb(63, 63, 63);}
+  25%  {color:rgb(163, 116, 6);}
+  50%  {color:rgb(93, 6, 18);}
+  75%  {color:rgb(255, 145, 0);}
+  100% {color:rgb(63, 63, 63);}
+}
+
 
 
 .full-width {
