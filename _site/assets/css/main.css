@@ -20,7 +20,7 @@ h2 { font-size: 2.5rem; }
 
 .spotify-list { height: 80vh; }
 
-.header-pic { margin: 25%; }
+.header-pic { margin: 25%; position: relative; z-index: 1; }
 
 .header { background-color: #a19a9a; height: 300px; text-align: center; }
 
