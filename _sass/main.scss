@@ -21,11 +21,13 @@ body {
   font-family: $bodyFont;
   margin: 0;
   padding: 0;
+
 }
 
 .content {
   padding: 106px;
   text-align: center;
+
 }
 
 a {
@@ -200,9 +202,9 @@ header .overlay {
       no-repeat center center scroll;
   }
 
-  header video {
-    display: none;
-  }
+  // header video {
+  //   display: none;
+  // }
 }
 
 
@@ -269,28 +271,44 @@ a {
 
 .map {
   iframe {
-    width:100vw;
+    width:100%;
     height:30vh;
     filter: invert(1) grayscale(1)
   }
 }
 
 footer {
+  height:130px;
+  position: relative;
   .footer-logo {
-    width:300px;
-    height:auto;
+    width: 300px;
+    height: auto;
+    position: absolute;
   }
-  .footer--logo-wrapper{
 
-    .footer--social-icon{
-  display:flex;
-
+  .footer--logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+    .footer--social-icon {
+      padding:0 2rem;
       svg {
-        fill:white;
+        transition:0.2s;
+        fill: white;
+        cursor: pointer;
+        &:hover {
+          fill: $orange;
+        }
       }
     }
   }
-}
+  .text-center{
+    text-align: center;
+  }
+
 // Timeline
 #timeline {
   width: 100%;
@@ -361,10 +379,10 @@ footer {
       }
 
       p {
-        padding:1rem 0;
+        padding: 1rem 0;
         color: #565554;
         font-size: 0.9rem;
-        margin:0;
+        margin: 0;
       }
 
       &:before {
@@ -431,6 +449,7 @@ footer {
 .media-width{
   width: 70em;
   height: 30em;
+
 }
 
 #carouselExampleIndicators{
@@ -438,13 +457,13 @@ footer {
   margin-top:  20px;
   margin-bottom:  20px;
   padding: 10px;
-  width: 40em!important;
+  width: 40%!important;
 }
 
 .iframe-kiss{
+  padding: 0 6px;
   float: left;
-  width: 20%;
-  padding-bottom: 20px;
+  width: 24.99999%;
 }
 .iframe-kiss h4{
   text-align: center;
@@ -452,3 +471,41 @@ footer {
   font-family: ans-serif;
 }
 
+.iframe-kiss iframe{
+  width: 100%;
+
+}
+@media only screen and (max-width: 1024px) {
+  #carouselExampleIndicators{
+    width: 100%!important;
+
+  }
+  #carouselExampleIndicators img{
+    height: 10%;
+
+  }
+  .ticket{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15%;
+    padding: 0px;
+  }
+  .ticket:before, .ticket:after{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .iframe-kiss {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .iframe-kiss{
+    width: 100%;
+ 
+  }
+}
