@@ -26,7 +26,7 @@ h2 { font-size: 2.5rem; }
 
 .group-photo { width: 100%; height: 500px; opacity: 0.3; }
 
-.menu-list-wrapper { height: px; }
+.menu-list-wrapper { height: 52px; }
 
 ul.menu-list { display: flex; text-decoration: none; margin: auto; background-color: #fff; font-family: serif; padding: 7px; width: 100%; }
 
