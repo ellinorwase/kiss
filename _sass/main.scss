@@ -25,11 +25,11 @@ body {
 
 }
 
-.content {
-  padding: 106px;
-  text-align: center;
+// .content {
+//   padding: 106px;
+//   text-align: center;
 
-}
+// }
 
 h1,
 h2,
@@ -51,7 +51,42 @@ a:hover {
   background-size: cover;
 }
 
-.header-pic{
+h2 {
+  font-size:2.5rem;
+}
+.chunk {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  position: relative;
+
+  span {
+    font-style: normal;
+    position: relative;
+    z-index: 1;
+  }
+
+  &::after {
+    background: $orange 50% repeat;
+    bottom: 0;
+    content: "";
+    height: 18px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}
+.full-width{
+  display: flex;
+  width:100%;
+  justify-content: center;
+}
+
+.spotify-list{
+  height:80vh;
+}
+
+.header-pic {
   margin: 25%;
 }
 
@@ -67,8 +102,8 @@ a:hover {
   opacity: 0.3;
 }
 
-.menu-list-wrapper{
-  height:108px;
+.menu-list-wrapper {
+  height: 108px;
 }
 
 ul.menu-list {
@@ -79,7 +114,8 @@ ul.menu-list {
   font-family: serif;
   padding: 24px;
 }
-ul.menu-list > a {
+
+ul.menu-list>a {
   display: flex;
   margin: auto;
   text-decoration: none;
@@ -95,7 +131,7 @@ ul.menu-list > a {
   margin-bottom: 20px;
 }
 
-.tickets-h{
+.tickets-h {
   font-style: italic;
   font-family: serif;
   font-size: 80px;
@@ -113,12 +149,21 @@ ul.menu-list > a {
   background: #fbfbfb;
   box-shadow: 2px 2px 15px 0px #ab9b0d;
   display: inline-table;
-  margin: 30px;
-  margin-top: 100px;
+  margin: 1.5rem;
+  margin-top: 40px;
+  transition: 0.2s;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.87);
-    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.93);
+    cursor: pointer;
+
+    button {
+      color: #212529;
+      background-color: #e0a800;
+      border-color: #d39e00;
+    }
+
+    // font-size: 30px;
   }
 
   &:before,
@@ -142,11 +187,21 @@ ul.menu-list > a {
   }
 }
 
+.discography {
+  background-image: url()
+}
+
+
+
+
 .ticket__content {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
   border: 6px solid #d8d8d8;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 // TICKETS
@@ -160,11 +215,15 @@ ul.menu-list > a {
 
 .ticket-text {
   color: black;
+  text-align: center;
 }
 
 .btn-warning {
+  background-color:$yellow;
+  border-color:$yellow;
   margin-bottom: 10px;
 }
+
 // TICKETS
 
 header {
@@ -209,8 +268,7 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
-      no-repeat center center scroll;
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll;
   }
 
   header video {
@@ -282,8 +340,8 @@ a {
 
 .map {
   iframe {
-    width:100%;
-    height:30vh;
+    width: 100%;
+    height: 30vh;
     filter: invert(1) grayscale(1)
   }
 }
@@ -293,9 +351,10 @@ footer {
   position: relative;
 
   .footer-logo {
-    width: 300px;
+    width: 20%;
     height: auto;
     position: absolute;
+    top: 12%;
   }
 
   .footer--logo-wrapper {
@@ -457,43 +516,132 @@ footer {
 }
 
 
+
+
+.fastfood {
+  height: 40vh;
+  width: 100%;
+  position: relative;
+
+  .fastfood-overlay {
+    background: url(/images/kiss2.jpg);
+    height: 100%;
+    background-position: 100% 9%;
+    background-size: 100% auto;
+    object-fit: cover;
+    opacity: 0.14;
+    filter: grayscale(1) brightness(0.5);
+  }
+
+
+
+  .fastfood-content {
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+  }
+}
+
+.icon-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  svg {
+    fill: white;
+    width: 35px;
+    height: 35px;
+    margin: 0 15px;
+  }
+}
+
+
 /* MEDIA */
 
-.media-width{
-  width: 70em;
-  height: 30em;
-
+.media-width {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-#carouselExampleIndicators{
-  margin: 0 auto;
-  margin-top:  20px;
-  margin-bottom:  20px;
-  padding: 10px;
-  width: 40%!important;
+#carouselExampleIndicators {
+  width: 100% !important;
+  height: 90vh;
 }
 
-.iframe-kiss{
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+
+.black--text {
+  color:black;
+}
+.band-picture{
+  background-color:#ffffffee;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height:90vh;
+  position: relative;
+  img{
+    width: 90%;
+    object-fit: cover;
+    margin: 0 auto;
+    height: 80%;
+    height: 90%;
+    opacity: 0.7;
+    box-shadow: 0px 0px 10px 4px #9a9a9a;
+}
+  .band-picture-content {
+    position: absolute;
+    width: 50%;
+    top: 6rem;
+    left: 6rem;
+    background: #00000066;
+    padding: 1rem;
+  }
+}
+
+
+
+.iframe-kiss {
   padding: 0 6px;
   float: left;
   width: 24.99999%;
 }
-.iframe-kiss h4{
+
+.iframe-kiss h4 {
   text-align: center;
   color: $blue;
-  font-family: ans-serif;
+  // font-family: ans-serif;
 }
 
-.iframe-kiss iframe{
+.iframe-kiss iframe {
   width: 100%;
 
 }
+
 @media only screen and (max-width: 1024px) {
-  #carouselExampleIndicators{
-    width: 100%!important;
+  #carouselExampleIndicators {
+    width: 100% !important;
 
   }
-  #carouselExampleIndicators img{
+
+  #carouselExampleIndicators img {
     height: 10%;
 
   }
@@ -508,8 +656,8 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-  .iframe-kiss{
+  .iframe-kiss {
     width: 100%;
- 
+
   }
 }
