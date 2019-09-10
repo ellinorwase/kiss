@@ -91,7 +91,7 @@ a { text-decoration: none; }
 
 .map iframe { width: 100%; height: 30vh; filter: invert(1) grayscale(1); }
 
-footer { position: relative; background-color: #ffffffee; height: 45vh; width: 100%; /* .footer--logo-wrapper { width: 100%; display: flex; justify-content: center; height: 100%; align-items: center; } .footer--social-icon { padding: 0 2rem; position: relative; top: 10vh; svg { transition: 0.2s; fill:#14110f; cursor: pointer; &:hover { fill: $orange; } } } */ }
+footer { position: relative; background-color: #ffffffee; height: 45vh; width: 100%; /* .footer--logo-wrapper { width: 100%; display: flex; justify-content: center; height: 100%; align-items: center; } .footer--social-icon { padding: 0 2rem; position: relative; top: 10vh; svg { transition: 0.2s; fill:#14110f; cursor: pointer; &:hover { fill: $orange; } } */ }
 
 footer .icon-footer { width: 100%; display: flex; justify-content: center; position: absolute; top: 28vh; }
 
@@ -209,11 +209,6 @@ footer .icon:hover { cursor: pointer; fill: #ee8212; }
 
 @media only screen and (min-width: 600px) { button, input { display: none; } }
 
-
 .discography-images { display: block; text-align: center; border: 3px solid #959595; padding: 10px; }
 
 .Dimg { width: 30%; margin: auto; }
-
-
-/*# sourceMappingURL=main.css.map */
-
