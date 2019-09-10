@@ -91,17 +91,15 @@ a { text-decoration: none; }
 
 .map iframe { width: 100%; height: 30vh; filter: invert(1) grayscale(1); }
 
-footer { height: 130px; position: relative; }
+footer { position: relative; background-color: #ffffffee; height: 45vh; width: 100%; /* .footer--logo-wrapper { width: 100%; display: flex; justify-content: center; height: 100%; align-items: center; } .footer--social-icon { padding: 0 2rem; position: relative; top: 10vh; svg { transition: 0.2s; fill:#14110f; cursor: pointer; &:hover { fill: $orange; } } } */ }
 
-footer .footer-logo { width: 20%; height: auto; position: absolute; top: 12%; }
+footer .icon-footer { width: 100%; display: flex; justify-content: center; position: absolute; top: 28vh; }
 
-footer .footer--logo-wrapper { width: 100%; display: flex; justify-content: center; height: 100%; align-items: center; }
+footer .icon svg { width: 40px; height: 40px; margin: 0 15px; }
 
-footer .footer--social-icon { padding: 0 2rem; }
+footer .icon:hover { cursor: pointer; fill: #ee8212; }
 
-footer .footer--social-icon svg { transition: 0.2s; fill: white; cursor: pointer; }
-
-footer .footer--social-icon svg:hover { fill: #ee8212; }
+.orange { background: #ee8212 50% repeat; content: ""; height: 1.5px; position: absolute; width: 20%; z-index: 0; top: 25vh; position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); }
 
 #timeline { width: 100%; margin: 30px auto; position: relative; padding: 0 10px; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -ms-transition: all 0.4s ease; transition: all 0.4s ease; }
 
@@ -184,7 +182,7 @@ footer .footer--social-icon svg:hover { fill: #ee8212; }
   .menuWrap .toggler { position: absolute; top: 0; left: 0; z-index: 2; cursor: pointer; width: 50px; height: 50px; opacity: 0; }
   .menuWrap .hamburger { position: absolute; top: 0; left: 0; z-index: 1; width: 60px; height: 60px; padding: 1rem; background: var(--primary-color); display: flex; align-items: center; justify-content: center; }
   /* Hamburger Line */
-  .menuWrap .hamburger > div { position: relative; flex: none; width: 80%; height: 4px; background: white; display: flex; align-items: center; justify-content: center; transition: all 0.4s ease; }
+  .menuWrap .hamburger > div { position: relative; flex: none; width: 80%; height: 4px; background-color: #ffffffee; display: flex; align-items: center; justify-content: center; transition: all 0.4s ease; }
   /* Hamburger Lines - Top & Bottom */
   .menuWrap .hamburger > div::before, .menuWrap .hamburger > div::after { content: ''; position: absolute; z-index: 1; top: -10px; width: 100%; height: 2px; background: inherit; }
   /* Moves Line Down */
@@ -210,5 +208,3 @@ footer .footer--social-icon svg:hover { fill: #ee8212; }
   .keep-track-of-kiss { font-size: 0.8em; } }
 
 @media only screen and (min-width: 600px) { button, input { display: none; } }
-
-/*# sourceMappingURL=main.css.map */

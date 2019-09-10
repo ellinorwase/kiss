@@ -381,16 +381,38 @@ a {
 }
 
 footer {
-  height: 130px;
+  
   position: relative;
+ background-color: #ffffffee;
+ height: 45vh;
+    width: 100%;
 
-  .footer-logo {
-    width: 20%;
-    height: auto;
-    position: absolute;
-    top: 12%;
+
+    
+.icon-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 28vh;
+}
+
+
+.icon{
+  svg {
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+   
+  }      
+
+  &:hover {
+    cursor: pointer;
+    fill: $orange;
   }
+}
 
+/*
   .footer--logo-wrapper {
     width: 100%;
     display: flex;
@@ -401,17 +423,31 @@ footer {
 
   .footer--social-icon {
     padding: 0 2rem;
-
+    position: relative;
+    top: 10vh;
     svg {
       transition: 0.2s;
-      fill: white;
+      fill:#14110f;
       cursor: pointer;
 
       &:hover {
         fill: $orange;
       }
-    }
+    } */
   }
+}
+.orange {
+  background: #ee8212 50% repeat;
+  content: "";
+  height: 1.5px;
+  position: absolute;
+  width: 20%;
+  z-index: 0;
+  top: 25vh;
+  position: absolute;
+		  top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
 }
 
 // Timeline
@@ -761,7 +797,7 @@ footer {
   flex: none;
   width: 80%;
   height: 4px;
-  background: rgb(255, 255, 255);
+  background-color: #ffffffee;
   display: flex;
   align-items: center;
   justify-content: center;
