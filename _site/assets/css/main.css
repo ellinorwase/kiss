@@ -208,12 +208,12 @@ footer .icon:hover { cursor: pointer; fill: #ee8212; }
   .keep-track-of-kiss { font-size: 0.8em; } }
 
 @media only screen and (min-width: 600px) { button, input { display: none; } }
-<<<<<<< HEAD
-=======
+
 
 .discography-images { display: block; text-align: center; border: 3px solid #959595; padding: 10px; }
 
 .Dimg { width: 30%; margin: auto; }
 
+
 /*# sourceMappingURL=main.css.map */
->>>>>>> Disco
+
