@@ -142,7 +142,6 @@ h1.KIϟϟ{
 
 .menu-list-wrapper {
   height: 52px;
-  z-index: 10;
 }
 
 ul.menu-list {
@@ -153,7 +152,6 @@ ul.menu-list {
   font-family: serif;
   padding: 7px;
   width: 100%;
-  z-index: 10;
 }
 
 ul.menu-list > a {
@@ -664,6 +662,12 @@ footer {
   #carouselExampleIndicators img {
     height: 10%;
   }
+  .ticket {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15%;
+    padding: 0px;
+  }
   #tickets {
     position: relative;
     margin: 0px auto;
@@ -689,6 +693,7 @@ footer {
   }
   .KIϟϟ {
     font-size: 3.8em;
+    z-index: 1;
   }
 }
 
@@ -906,4 +911,3 @@ button,  input {
 }
 
 }
-
