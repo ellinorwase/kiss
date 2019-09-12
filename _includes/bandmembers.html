@@ -1,0 +1,22 @@
+<section class="bandmembers ">
+    <div class="full-width">
+        <h2 class="chunk text-center visible my-5">
+            <span class="keep-track-of-kiss ">
+                Kiss Group 2019
+            </span>
+        </h2>
+    </div>
+    <div class="full-width bandmember-wrap">
+        <div class="bandmember  ">
+            {% for post in site.posts %}
+            <div class="bandmember_wrapper visisble">
+               <img class="bandmember_img" src={{ post.featuredImg }} alt="" />
+                <p>{{post.name}}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+
+</section>

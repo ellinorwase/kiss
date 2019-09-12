@@ -5,7 +5,11 @@ body { background: #14110f; color: #ffffff; font-family: "Montserrat"; margin: 0
 
 h1, h2, h3, h4, h5, h6, p, a { font-family: "Montserrat"; }
 
-a { color: black; }
+.visible { opacity: 0; transform: translateX(-50px); transition: all 1.2s ease-out; }
+
+.isVisible { opacity: 1; transform: translateX(0); }
+
+a { color: black; transition: 0.2s; }
 
 a:hover { color: #f19a16; background-size: cover; }
 
@@ -27,9 +31,9 @@ h1.KIϟϟ { -webkit-animation-name: example; -webkit-animation-duration: 4s; -we
   75% { color: #ff9100; }
   100% { color: #3f3f3f; } }
 
-.full-width { display: flex; width: 100%; justify-content: center; }
+.full-width { display: flex; width: 100%; justify-content: center; position: relative; }
 
-.spotify-list { height: 80vh; }
+.spotify-list { height: 85vh; display: flex; align-items: center; justify-content: center; }
 
 .header-pic { margin: 25%; position: relative; z-index: 1; }
 
@@ -59,7 +63,27 @@ ul.menu-list > a { display: flex; margin: auto; text-decoration: none; font-size
 
 .ticket:after { bottom: -5px; background: radial-gradient(circle, transparent, transparent 50%, #fbfbfb 50%, #fbfbfb 100%) -7px -2px/16px 16px repeat-x; }
 
-.discography { background-image: url(); }
+.discography { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+
+.bandmembers { height: 90vh; position: relative; }
+
+.bandmembers .bandmember-wrap { position: absolute; }
+
+.bandmembers .bandmember { width: 100%; display: grid; grid-template-columns: auto auto; grid-template-rows: repeat(2, 300px); }
+
+.bandmembers .bandmember .bandmember_img { width: 100%; height: 100%; object-fit: cover; }
+
+.bandmembers .bandmember .bandmember_wrapper { position: relative; overflow: hidden; }
+
+.bandmembers .bandmember .bandmember_wrapper img { transition: 0.3s; }
+
+.bandmembers .bandmember .bandmember_wrapper p { background: #ffffff54; position: absolute; left: 1rem; bottom: 0; padding: 4px 10px; transition: 0.3s; }
+
+.bandmembers .bandmember .bandmember_wrapper:hover p { background: white; color: #ee8212; }
+
+.bandmembers .bandmember .bandmember_wrapper:hover img { transform: scale(1.1); }
+
+.bandmembers .bandmember .bandmember_wrapper:first-child, .bandmembers .bandmember .bandmember_wrapper:nth-child(2) { grid-row-start: 2; }
 
 .ticket__content { box-sizing: border-box; height: 100%; width: 100%; border: 6px solid #d8d8d8; display: flex; justify-content: center; flex-wrap: wrap; }
 
@@ -94,6 +118,8 @@ a { text-decoration: none; }
 footer { display: flex; justify-content: center; position: relative; background-color: #ffffffee; height: 45vh; width: 100%; /* .footer--logo-wrapper { width: 100%; display: flex; justify-content: center; height: 100%; align-items: center; } .footer--social-icon { padding: 0 2rem; position: relative; top: 10vh; svg { transition: 0.2s; fill:#14110f; cursor: pointer; &:hover { fill: $orange; } } */ }
 
 footer .icon-footer { width: 100%; display: flex; justify-content: center; position: absolute; top: 28vh; }
+
+footer .icon { transition: 0.2s; }
 
 footer .icon svg { width: 40px; height: 40px; margin: 0 15px; }
 
@@ -141,10 +167,12 @@ footer .footer-logo { width: 20%; height: auto; margin: 2rem 0; }
 
 .icon-wrapper { width: 100%; display: flex; justify-content: center; }
 
-.icon-wrapper svg { fill: white; width: 35px; height: 35px; margin: 0 15px; }
+.icon-wrapper svg { fill: white; width: 35px; height: 35px; margin: 0 15px; transition: 0.2s; cursor: pointer; }
+
+.icon-wrapper svg:hover { fill: #ee8212; }
 
 /* MEDIA */
-.media-width { width: 100%; height: 100%; object-fit: cover; }
+.media-width { width: 100%; height: 90vh; object-fit: cover; }
 
 #carouselExampleIndicators { width: 100% !important; height: 100%; }
 
